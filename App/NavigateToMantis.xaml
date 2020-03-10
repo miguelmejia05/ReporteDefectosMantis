@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>775,830</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>775,790</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavigateToMantis_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -85,14 +85,7 @@
     </ui:OpenBrowser>
     <ui:UiElementExists DisplayName="Cargo la tabla?" Exists="[bool_ExisteTabla]" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
       <ui:UiElementExists.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9fe8a71778aca3ed8af5eb04cdfff4c7" Selector="&lt;html app='chrome.exe' title='Reportar Defecto - Mantis - Banco Bice QA' /&gt;&lt;webctrl parentname='report_bug_form' tag='TABLE' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9fe8a71778aca3ed8af5eb04cdfff4c7" Selector="&lt;html app='chrome.exe' title='Reportar Defecto - Mantis - Banco Bice QA' /&gt;&lt;webctrl parentname='report_bug_form' tag='TABLE' /&gt;" TimeoutMS="30000" WaitForReady="COMPLETE" />
       </ui:UiElementExists.Target>
     </ui:UiElementExists>
     <If Condition="[not bool_ExisteTabla]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="713,239" sap2010:WorkflowViewState.IdRef="If_1">
